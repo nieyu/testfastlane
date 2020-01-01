@@ -13,7 +13,34 @@
 		51B2F0CA23BC3D98007C2CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B2F0C823BC3D98007C2CB0 /* Main.storyboard */; };
 		51B2F0CC23BC3D9B007C2CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51B2F0CB23BC3D9B007C2CB0 /* Assets.xcassets */; };
 		51B2F0CF23BC3D9B007C2CB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B2F0CD23BC3D9B007C2CB0 /* LaunchScreen.storyboard */; };
+		51B2F0DF23BC49E2007C2CB0 /* NetLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 51B2F0DD23BC49E2007C2CB0 /* NetLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51B2F0E223BC49E2007C2CB0 /* NetLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B2F0DB23BC49E2007C2CB0 /* NetLib.framework */; };
+		51B2F0E323BC49E2007C2CB0 /* NetLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51B2F0DB23BC49E2007C2CB0 /* NetLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51B2F0E023BC49E2007C2CB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51B2F0B723BC3D98007C2CB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51B2F0DA23BC49E2007C2CB0;
+			remoteInfo = NetLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51B2F0E723BC49E2007C2CB0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				51B2F0E323BC49E2007C2CB0 /* NetLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		51B2F0BF23BC3D98007C2CB0 /* TestFastlane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFastlane.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +51,21 @@
 		51B2F0CB23BC3D9B007C2CB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51B2F0CE23BC3D9B007C2CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51B2F0D023BC3D9B007C2CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51B2F0DB23BC49E2007C2CB0 /* NetLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51B2F0DD23BC49E2007C2CB0 /* NetLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetLib.h; sourceTree = "<group>"; };
+		51B2F0DE23BC49E2007C2CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		51B2F0BC23BC3D98007C2CB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B2F0E223BC49E2007C2CB0 /* NetLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51B2F0D823BC49E2007C2CB0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				51B2F0C123BC3D98007C2CB0 /* TestFastlane */,
+				51B2F0DC23BC49E2007C2CB0 /* NetLib */,
 				51B2F0C023BC3D98007C2CB0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				51B2F0BF23BC3D98007C2CB0 /* TestFastlane.app */,
+				51B2F0DB23BC49E2007C2CB0 /* NetLib.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +107,27 @@
 			path = TestFastlane;
 			sourceTree = "<group>";
 		};
+		51B2F0DC23BC49E2007C2CB0 /* NetLib */ = {
+			isa = PBXGroup;
+			children = (
+				51B2F0DD23BC49E2007C2CB0 /* NetLib.h */,
+				51B2F0DE23BC49E2007C2CB0 /* Info.plist */,
+			);
+			path = NetLib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		51B2F0D623BC49E2007C2CB0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B2F0DF23BC49E2007C2CB0 /* NetLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		51B2F0BE23BC3D98007C2CB0 /* TestFastlane */ = {
@@ -77,15 +137,35 @@
 				51B2F0BB23BC3D98007C2CB0 /* Sources */,
 				51B2F0BC23BC3D98007C2CB0 /* Frameworks */,
 				51B2F0BD23BC3D98007C2CB0 /* Resources */,
+				51B2F0E723BC49E2007C2CB0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				51B2F0E123BC49E2007C2CB0 /* PBXTargetDependency */,
 			);
 			name = TestFastlane;
 			productName = TestFastlane;
 			productReference = 51B2F0BF23BC3D98007C2CB0 /* TestFastlane.app */;
 			productType = "com.apple.product-type.application";
+		};
+		51B2F0DA23BC49E2007C2CB0 /* NetLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51B2F0E423BC49E2007C2CB0 /* Build configuration list for PBXNativeTarget "NetLib" */;
+			buildPhases = (
+				51B2F0D623BC49E2007C2CB0 /* Headers */,
+				51B2F0D723BC49E2007C2CB0 /* Sources */,
+				51B2F0D823BC49E2007C2CB0 /* Frameworks */,
+				51B2F0D923BC49E2007C2CB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetLib;
+			productName = NetLib;
+			productReference = 51B2F0DB23BC49E2007C2CB0 /* NetLib.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +178,9 @@
 				ORGANIZATIONNAME = "nie yu";
 				TargetAttributes = {
 					51B2F0BE23BC3D98007C2CB0 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					51B2F0DA23BC49E2007C2CB0 = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
@@ -116,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				51B2F0BE23BC3D98007C2CB0 /* TestFastlane */,
+				51B2F0DA23BC49E2007C2CB0 /* NetLib */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +212,13 @@
 				51B2F0CF23BC3D9B007C2CB0 /* LaunchScreen.storyboard in Resources */,
 				51B2F0CC23BC3D9B007C2CB0 /* Assets.xcassets in Resources */,
 				51B2F0CA23BC3D98007C2CB0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51B2F0D923BC49E2007C2CB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +235,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51B2F0D723BC49E2007C2CB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51B2F0E123BC49E2007C2CB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51B2F0DA23BC49E2007C2CB0 /* NetLib */;
+			targetProxy = 51B2F0E023BC49E2007C2CB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		51B2F0C823BC3D98007C2CB0 /* Main.storyboard */ = {
@@ -316,6 +422,60 @@
 			};
 			name = Release;
 		};
+		51B2F0E523BC49E2007C2CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W5JQ3L7DHT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NetLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nieyu.NetLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		51B2F0E623BC49E2007C2CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W5JQ3L7DHT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NetLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nieyu.NetLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +493,15 @@
 			buildConfigurations = (
 				51B2F0D423BC3D9B007C2CB0 /* Debug */,
 				51B2F0D523BC3D9B007C2CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51B2F0E423BC49E2007C2CB0 /* Build configuration list for PBXNativeTarget "NetLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51B2F0E523BC49E2007C2CB0 /* Debug */,
+				51B2F0E623BC49E2007C2CB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
